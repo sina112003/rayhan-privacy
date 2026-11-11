@@ -1,4 +1,4 @@
-$html = @'
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -173,8 +173,3 @@ $html = @'
 
 </body>
 </html>
-'@
-
-$destination = "$HOME\Desktop\index.html"
-[System.IO.File]::WriteAllText($destination, $html, [System.Text.Encoding]::UTF8)
-Write-Host "Success! File generated at: $destination" -ForegroundColor Green
