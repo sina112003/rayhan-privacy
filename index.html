@@ -1,174 +1,328 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Rayhan</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #333333;
-            background-color: #fafafa;
-            margin: 0;
-            padding: 30px 15px;
-            display: flex;
-            justify-content: center;
-        }
-        .page-card {
-            background-color: #ffffff;
-            max-width: 650px;
-            width: 100%;
-            padding: 40px 35px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-            border-radius: 4px;
-        }
-        h1.title {
-            text-align: center;
-            color: #1e6b52;
-            font-size: 26px;
-            font-weight: 700;
-            margin-top: 0;
-            margin-bottom: 25px;
-        }
-        .top-divider {
-            border: none;
-            border-top: 1.5px solid #d4a359;
-            margin-bottom: 20px;
-        }
-        .last-updated {
-            font-size: 13px;
-            font-weight: bold;
-            color: #222;
-            margin-bottom: 15px;
-        }
-        .intro-text {
-            font-size: 13.5px;
-            line-height: 1.6;
-            color: #444;
-            margin-bottom: 25px;
-        }
-        h2.section-title {
-            color: #1e6b52;
-            font-size: 16px;
-            font-weight: 700;
-            margin-top: 25px;
-            margin-bottom: 12px;
-        }
-        p, li {
-            font-size: 13px;
-            line-height: 1.65;
-            color: #444444;
-        }
-        ul {
-            margin-top: 8px;
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 6px;
-        }
-        hr.section-divider {
-            border: none;
-            border-top: 1px solid #e2e8f0;
-            margin: 25px 0;
-        }
-        .disclaimer-box {
-            background-color: #fef9e7;
-            border: 1px solid #f9e79f;
-            border-left: 5px solid #f1c40f;
-            padding: 12px 16px;
-            margin: 15px 0;
-            border-radius: 3px;
-            font-size: 12.5px;
-            line-height: 1.6;
-            color: #5d4037;
-        }
-        .disclaimer-box strong {
-            color: #3e2723;
-        }
-        .contact-info {
-            font-size: 13px;
-            margin-top: 10px;
-        }
-        .contact-info a {
-            color: #1e6b52;
-            text-decoration: underline;
-        }
-        .footer {
-            text-align: center;
-            font-size: 11px;
-            color: #888888;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Rayhan Quran App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-dark: #047857;
+      --primary-light: #ecfdf5;
+      --accent-gold: #d97706;
+      --accent-gold-bg: #fffbeb;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 30px 20px;
+      background: radial-gradient(circle at center, rgba(5, 150, 105, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+      border-radius: var(--radius-lg);
+    }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(5, 150, 105, 0.15);
+      border: 1px solid rgba(5, 150, 105, 0.3);
+      color: #34d399;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .arabic-title {
+      font-family: 'Amiri', serif;
+      font-size: 2.2rem;
+      color: #fbbf24;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(5, 150, 105, 0.4);
+    }
+
+    .card-featured {
+      background: linear-gradient(145deg, rgba(5, 150, 105, 0.12) 0%, rgba(30, 41, 59, 0.95) 100%);
+      border: 1px solid rgba(5, 150, 105, 0.4);
+      position: relative;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #f1f5f9;
+    }
+
+    .icon-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 12px;
+      font-size: 0.98rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-box {
+      background: rgba(5, 150, 105, 0.08);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 16px 0;
+    }
+
+    ul, ol {
+      padding-left: 24px;
+      margin-bottom: 14px;
+      color: #cbd5e1;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: #f8fafc;
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      color: #38bdf8;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .quote-box {
+      background: rgba(217, 119, 6, 0.08);
+      border-left: 4px solid var(--accent-gold);
+      padding: 18px 22px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 16px 0;
+      font-style: normal;
+      color: #fde68a;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      transition: all 0.2s;
+      margin-top: 10px;
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+    }
+
+    .contact-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 1px solid var(--card-border);
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="logo-badge">🌿 Rayhan Quran App</div>
+      <div class="arabic-title">تطبيق ريحان للقرآن الكريم</div>
+      <h1>Privacy Policy & Data Transparency</h1>
+      <p class="last-updated">Last Updated: November 26, 2026</p>
+    </header>
 
-<div class="page-card">
-    <h1 class="title">Privacy Policy</h1>
-    <hr class="top-divider">
-
-    <div class="last-updated">Last Updated: November 11, 2026</div>
-
-    <div class="intro-text">
-        Welcome to <strong>Rayhan - Holy Quran</strong>. We take your privacy seriously. This Privacy Policy explains how we handle your information when you use our application.
+    <!-- Overview -->
+    <div class="card">
+      <h2><span class="icon-badge">🛡️</span> 1. Overview & Commitment to Privacy</h2>
+      <p>
+        At <strong>Rayhan - Holy Quran Audio (ريحان - القرآن الكريم)</strong>, we hold user privacy and sacred spiritual focus in the highest regard. Our mission is to provide Muslims worldwide with a pure, peaceful, and ad-free experience for listening, memorizing, and contemplating the Holy Quran.
+      </p>
+      <div class="highlight-box">
+        <p>
+          <strong>Summary:</strong> Rayhan does <strong>NOT</strong> collect, store, transmit, or share any personal identifiable information (PII). No user accounts or registrations are ever required.
+        </p>
+      </div>
     </div>
 
-    <h2 class="section-title">1. Data Collection and Usage</h2>
-    <p><strong>We do not collect, store, or share any personal data.</strong></p>
-    <ul>
-        <li>All information you provide (such as your favorites, playback progress, bookmarks, and downloads) is stored <strong>locally on your device only</strong>.</li>
-        <li>We do not transmit any data to external servers, and we do not maintain any servers to collect your personal data.</li>
-        <li>The app does not request access to your location, contacts, camera, or microphone.</li>
-        <li>We do not use any third-party analytics or advertising trackers.</li>
-    </ul>
-
-    <hr class="section-divider">
-
-    <h2 class="section-title">2. Offline Downloads</h2>
-    <p>The app allows you to download audio files (Surahs, Rubs, and Juzs) for offline listening. These files are stored locally in your device's internal app storage. You have full control to delete these downloads at any time from within the app. We do not have access to these downloaded files.</p>
-
-    <hr class="section-divider">
-
-    <h2 class="section-title">3. Daily Alarm Feature</h2>
-    <p>Our app offers a daily alarm / reminder feature to remind you of your Quran recitation (Khatma). This reminder is scheduled and operates entirely locally on your device. No personal data is collected or transmitted to any server when you use this feature.</p>
-
-    <hr class="section-divider">
-
-    <h2 class="section-title">4. Audio Streaming Sources</h2>
-    <p>The app streams audio from reliable public Quranic audio servers, such as <strong>MP3Quran</strong>, <strong>EveryAyah</strong>, and <strong>Archive.org</strong>. These external services have their own network protocols, and we do not collect or monitor any IP or technical data during audio streaming.</p>
-
-    <hr class="section-divider">
-
-    <h2 class="section-title">5. Children's Privacy</h2>
-    <p>Our application is suitable for all ages. We do not knowingly collect any personal information from children. Since we do not collect any personal data, we are fully compliant with standard global children's privacy regulations.</p>
-
-    <hr class="section-divider">
-
-    <h2 class="section-title">6. Disclaimer</h2>
-    <div class="disclaimer-box">
-        <strong>Important Notice:</strong> This application is an independent, non-profit initiative. It is <strong>not affiliated with</strong> any government, official entity, or commercial religious institution. All audio recitations remain the property of their respective reciters and copyright holders.
+    <!-- Zero Data Collection -->
+    <div class="card">
+      <h2><span class="icon-badge">🔒</span> 2. Zero Personal Data Collection</h2>
+      <p>We believe in absolute user autonomy. The application operates entirely without harvesting personal metrics:</p>
+      <ul>
+        <li><strong>No Account Registration:</strong> Access all app features immediately without providing email, username, phone number, or password.</li>
+        <li><strong>No Location Tracking:</strong> The application does not access, monitor, or track your GPS or fine location.</li>
+        <li><strong>No Advertising IDs:</strong> We do not track Google Advertising IDs (GAID) or employ analytics fingerprinting.</li>
+        <li><strong>No Third-Party Trackers:</strong> No third-party commercial data brokers or marketing SDKs are embedded.</li>
+      </ul>
     </div>
 
-    <hr class="section-divider">
-
-    <h2 class="section-title">7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We encourage you to review this page periodically for any changes.</p>
-
-    <hr class="section-divider">
-
-    <h2 class="section-title">8. Contact Us</h2>
-    <p>If you have any questions regarding this Privacy Policy or general inquiries, please contact us at:</p>
-    <div class="contact-info">
-        <strong>Email:</strong> <a href="mailto:contact@rayhan.stream">contact@rayhan.stream</a>
+    <!-- Local Storage -->
+    <div class="card">
+      <h2><span class="icon-badge">💾</span> 3. Local Storage on Device</h2>
+      <p>
+        All your user-specific data—such as customized playback settings, reading bookmarks, Khatma reminders, and downloaded audio recitations—is stored <strong>strictly locally on your personal device</strong> using standard local storage technologies (IndexedDB).
+      </p>
+      <p>
+        This local data never leaves your device and is never uploaded to any cloud server or remote database.
+      </p>
     </div>
 
-    <div class="footer">
-        &copy; 2026 Rayhan App. All rights reserved.
+    <!-- Data Deletion & Google Play Compliance -->
+    <div class="card">
+      <h2><span class="icon-badge">🗑️</span> 4. Data Deletion & User Rights (Google Play Compliance)</h2>
+      <p>
+        In accordance with Google Play's Data Safety and Deletion standards, users have immediate, full control over all locally cached and stored assets:
+      </p>
+      <ol>
+        <li><strong>Deleting Audio Downloads:</strong> You can delete any individual Surah, Quarter (Rub), or full Juz at any time directly within the app's <em>Downloads</em> screen.</li>
+        <li><strong>Clearing App Data:</strong> You can completely erase all local settings, bookmarks, and downloads by navigating to your device settings: <code>Settings &rarr; Apps &rarr; Rayhan &rarr; Storage &rarr; Clear Data / Clear Storage</code>.</li>
+        <li><strong>Uninstalling the App:</strong> Uninstalling the Rayhan application immediately and permanently wipes all files, audio, and databases created by the app from your device.</li>
+      </ol>
+      <p>
+        Because we do not store your data on external servers or maintain user profiles, no manual deletion request or account closure procedure is required—data deletion is instant and under your immediate control.
+      </p>
     </div>
-</div>
 
+    <!-- Audio Data Sources -->
+    <div class="card">
+      <h2><span class="icon-badge">🎙️</span> 5. Audio Data Sources</h2>
+      <p>
+        Audio recitations provided within the application are sourced from reliable, publicly available platforms such as <strong>MP3Quran</strong> and <strong>EveryAyah</strong> to ensure high-quality and uninterrupted spiritual listening.
+      </p>
+      <p>
+        All copyright and intellectual property rights for the recitations are reserved for their respective reciters and copyright holders.
+      </p>
+    </div>
+
+    <!-- Sponsoring Impact & Continuity -->
+    <div class="card card-featured">
+      <h2><span class="icon-badge">🌿</span> 6. Sponsoring the Impact & Sustaining Rayhan</h2>
+      <div class="quote-box">
+        <p>
+          "The 'Rayhan' project was established as a pure digital endowment (Waqf) dedicated to the Book of Allah, offering a serene, ad-free recitation experience to Muslims across the globe, completely free of charge.
+        </p>
+        <p style="margin-top: 10px;">
+          To ensure this platform remains steadfast, thriving, and sustainable as an enduring continuous charity (Sadaqah Jariyah), we warmly welcome anyone who wishes to sponsor this noble work or extend a helping hand to strengthen and sustain its blessed journey."
+        </p>
+      </div>
+      <p><strong>To connect and coordinate with the initiative team:</strong></p>
+      <a href="mailto:Contact@rayhan.stream" class="contact-btn">✉ Contact@rayhan.stream</a>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="card">
+      <h2><span class="icon-badge">⚖️</span> 7. Disclaimer & Independent Project</h2>
+      <p>
+        The Rayhan application is a completely free, independent personal initiative developed solely for non-commercial educational and spiritual benefit. It is not affiliated with, endorsed by, or representing any government, religious, or political entity.
+      </p>
+    </div>
+
+    <!-- Contact & Copyright -->
+    <div class="card">
+      <h2><span class="icon-badge">📬</span> 8. Copyright & Contact Inquiries</h2>
+      <p>
+        We respect intellectual property rights. If you are a copyright owner or have questions, feedback, or requests regarding content removal, please feel free to contact us and we will promptly and respectfully attend to your request:
+      </p>
+      <a href="mailto:Support@rayhan.stream" class="contact-btn">✉ Support@rayhan.stream</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Rayhan App (ريحان). All rights reserved.</p>
+      <p>Pure, ad-free Quran recitation for the global Muslim community.</p>
+    </footer>
+  </div>
 </body>
 </html>
+
